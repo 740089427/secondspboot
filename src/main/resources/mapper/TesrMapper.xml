@@ -8,4 +8,7 @@
     <select id="getAll"  resultMap="testmodel">
         select * from tests
     </select>
+    <select id="getModelById"  parameterType="int" resultType="hashmap">
+        select * from tests where ID = #{id}
+    </select>
 </mapper>

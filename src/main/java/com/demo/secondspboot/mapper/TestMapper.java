@@ -10,4 +10,6 @@ import java.util.List;
 @Repository
 public interface TestMapper {
     List<TestModel>  getAll();
+    List<TestModel>  getModelById(int id);
 }
+

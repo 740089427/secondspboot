@@ -19,4 +19,8 @@ public class TestController {
    public List<TestModel> getAlltest(){
        return testService.getAll();
    }
+    @RequestMapping(value = "/getModelById")
+    public List<TestModel> getModelById(int id){
+        return testService.getModelById(id);
+    }
 }
